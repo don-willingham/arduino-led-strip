@@ -261,7 +261,7 @@ void runRainbowCycle() {
     for (uint8_t hue = 0; hue < 256; hue++) {
       if (run_mode != rainbow_cycle) return;
       FastLED.showColor(CHSV(hue, 255, 255));
-      delay(10);
+      delay(25);
     }
   }
 }
