@@ -13,7 +13,7 @@
 // Install FastLED library using Library manager
 #include <FastLED.h>
 
-#define NUM_LEDS 100
+#define NUM_LEDS 20
 // Define the array of leds
 CRGBArray<NUM_LEDS> leds;//[NUM_LEDS];
 
@@ -49,7 +49,7 @@ enum all_modes {
   last = rainbow_loop
 };
 
-volatile all_modes run_mode = off;  // LED effects mode setting
+volatile all_modes run_mode = solid_white;  // LED effects mode setting
 long ttime = 0;                     // the last time the output pin was toggled
 long debounce = 200;                // the debounce time
 
